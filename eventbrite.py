@@ -8,7 +8,7 @@ url = "https://www.eventbrite.hk/api/v3/destination/search/"
 skip_keywords = ["Weekly Social HackJam","AIA", "Eats Out", "Drink","瑜伽","Meditation","展覽","Testing","NETMHK","Live Music","創意工作坊","SALSA FEVER","護手霜","Fringe Club","Kizomba"]
 categoryArr = [
     # Business
-    # "EventbriteCategory/101",
+    "EventbriteCategory/101",
     # Health
     # "EventbriteCategory/107",
     # Charity & Causes
@@ -38,7 +38,7 @@ categoryArr = [
     # Holidays
     # "EventbriteCategory/116",
     # Other
-    "EventbriteCategory/199",
+    # "EventbriteCategory/199",
 ]
 
 
@@ -69,7 +69,8 @@ for category in categoryArr:
     payload = json.dumps(
         {
             "event_search": {
-                "dates": ["current_future", "this_month"],
+                # "dates": ["current_future", "this_month"],
+                "dates": ["current_future", "next_month"],
                 "dedup": True,
                 "places": ["85671791"],
                 "price": "free",
@@ -134,14 +135,15 @@ for category in categoryArr:
             if any(keyword in title for keyword in skip_keywords):
                 continue
             if is_event_on_weekend_or_after_hours(start_date, end_date, start_time):
-                print(f"Title: {title}")
-                print(
-                    f"Start Date: {event_start.strftime('%Y-%m-%d %H:%M:%S')}, {event_start.strftime('%A')}"
-                )
-                print(
-                    f"End Date  : {event_end.strftime('%Y-%m-%d %H:%M:%S')}, {event_end.strftime('%A')}"
-                )
-                print(f"URL: {localized_address_display}\n")
-                print(f"URL: {url}\n")
+                continue
+            print(f"Title: {title}")
+            print(
+                f"Start Date: {event_start.strftime('%Y-%m-%d %H:%M:%S')}, {event_start.strftime('%A')}"
+            )
+            print(
+                f"End Date  : {event_end.strftime('%Y-%m-%d %H:%M:%S')}, {event_end.strftime('%A')}"
+            )
+            print(f"URL: {localized_address_display}")
+            print(f"URL: {url}\n")
 
     t.sleep(5)
