@@ -2,10 +2,11 @@ import requests
 import json
 from datetime import datetime, timedelta, time
 import time as t
+from common_utils import CommonUtils
 
 url = "https://www.eventbrite.hk/api/v3/destination/search/"
 
-skip_keywords = ["Weekly Social HackJam","AIA", "Eats Out", "Drink","瑜伽","Meditation","展覽","Testing","NETMHK","Live Music","創意工作坊","SALSA FEVER","護手霜","Fringe Club","Kizomba"]
+skip_keywords = ["Weekly Social HackJam","AIA", "Eats Out", "Drink","瑜伽","Meditation","展覽","Testing","NETMHK","Live Music","創意工作坊","SALSA FEVER","護手霜","Fringe Club","Kizomba","Hive x Starring"]
 categoryArr = [
     # Business
     "EventbriteCategory/101",
@@ -40,29 +41,6 @@ categoryArr = [
     # Other
     # "EventbriteCategory/199",
 ]
-
-
-def is_event_on_weekend_or_after_hours(start_date_str, end_date_str, start_time_str):
-    # Combine start date and time
-    start_datetime = datetime.strptime(
-        f"{start_date_str} {start_time_str}", "%Y-%m-%d %H:%M"
-    )
-    # Parse end date
-    end_datetime = datetime.strptime(end_date_str, "%Y-%m-%d")
-
-    # Check for weekend days between start and end dates
-    current_date = start_datetime.date()
-    end_date = end_datetime.date()
-    while current_date <= end_date:
-        if current_date.weekday() >= 5:  # Saturday or Sunday
-            return True
-        current_date += timedelta(days=1)
-
-    # Check if event starts after 18:20 on a weekday
-    if start_datetime.time() >= time(18, 20):
-        return True
-    return False
-
 
 # for Category
 for category in categoryArr:
@@ -134,7 +112,7 @@ for category in categoryArr:
             # if title contains "AIA" "Eats Out", then skip
             if any(keyword in title for keyword in skip_keywords):
                 continue
-            if is_event_on_weekend_or_after_hours(start_date, end_date, start_time):
+            if not CommonUtils.is_event_on_weekend_or_after_hours(event_start, event_end):
                 continue
             print(f"Title: {title}")
             print(

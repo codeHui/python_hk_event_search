@@ -1,6 +1,7 @@
 import requests
 from datetime import datetime, time, timedelta
 from bs4 import BeautifulSoup
+from common_utils import CommonUtils
 
 # URL and parameters
 url = "https://www.polyu.edu.hk/en/api/sitecore/calendar/search"
@@ -17,16 +18,7 @@ response = requests.get(url, params=params)
 data = response.json()
 # print(data)
 
-def is_event_on_weekend_or_after_hours(event_start,event_end):
-    # return ture if there is Saturday or Sunday in between event_start and event_end
-    current_date = event_start
-    while current_date <= event_end:
-        if current_date.weekday() >= 5:  # 5 is Saturday, 6 is Sunday
-            return True
-        current_date += timedelta(days=1)
 
-    # return true if event_start is after 18:30 on a weekday
-    return event_start.time() >= time(18, 20)
 
 # Iterate over events
 for event in data.get("events", []):
@@ -41,8 +33,8 @@ for event in data.get("events", []):
     event_end = datetime.fromisoformat(event_end_str)
 
     # Check if event is on weekend or after 18:30 on a weekday
-    if True:
-    # if is_event_on_weekend_or_after_hours(event_start,event_end):
+    # if True:
+    if CommonUtils.is_event_on_weekend_or_after_hours(event_start,event_end):
         # Parse content to get title and href
         content = event.get("content", "")
         soup = BeautifulSoup(content, "html.parser")
