@@ -44,5 +44,6 @@ def fetch_events():
             print(f"URL: {urlHerf}")
             print("-" * 40)
 
+# ...existing code...
 if __name__ == "__main__": 
     fetch_events()
