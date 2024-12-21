@@ -1,12 +1,12 @@
 # HK Event Search
 
-HK Event Search is a Python script that allows you to search for events from various universities and event platforms in Hong Kong with a single command. It filters out events that occur during working hours, saving you time and effort.
+python_hk_event_search allows you to search for Hong Kong events from various universities and event platforms with a single command. It filters out events that occur during working hours and the topics you are not interested, saving you time and effort.
 
 ## Features
 
 - Fetch events from CityU, PolyU, HKU, and Eventbrite.
 - Filters out events during working hours.
-- Filter out events by keywords in their titles by modifying `title_filter_config` in the `main.py`.
+- Filter out topics by keywords in their titles by modifying `title_filter_config` in the `main.py`.
 - Easy to use and extend.
 
 ## Installation
