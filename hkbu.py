@@ -70,26 +70,27 @@ def fetch_events(title_filter_words):
                 if any(sub.lower() in title_en.lower() for sub in title_filter_words):
                     continue
 
-                # Skip if already printed
-                if title_en in printed_titles:
-                    continue
-                printed_titles.add(title_en)
+                if CommonUtils.is_period_after_work(start_dt, end_dt):
+                    # Skip if already printed
+                    if title_en in printed_titles:
+                        continue
+                    printed_titles.add(title_en)
 
-                day_of_week_from = start_dt.strftime("%A")
-                day_of_week_to = end_dt.strftime("%A")
-                if date_to == date_from:
-                    date_display = f"{date_from} ({day_of_week_from})"
-                else:
-                    date_display = f"{date_from} ({day_of_week_from}) - {date_to} ({day_of_week_to})"
+                    day_of_week_from = start_dt.strftime("%A")
+                    day_of_week_to = end_dt.strftime("%A")
+                    if date_to == date_from:
+                        date_display = f"{date_from} ({day_of_week_from})"
+                    else:
+                        date_display = f"{date_from} ({day_of_week_to}) - {date_to} ({day_of_week_to})"
 
-                print(f"Title: {title_en}")
-                if title_tc and title_tc != title_en:
-                    print(f"Title Chinese: {title_tc}")
-                print(f"Date: {date_display}")
-                print(f"Time: {time_from}:00 - {time_to}:00" if time_from else "Time: check the url")
-                print(f"Venue: {event.get('location_other_en', '')}")
-                print(f"URL: {event.get('website', '')}")
-                print("-" * 40)
+                    print(f"Title: {title_en}")
+                    if title_tc and title_tc != title_en:
+                        print(f"Title Chinese: {title_tc}")
+                    print(f"Date: {date_display}")
+                    print(f"Time: {time_from}:00 - {time_to}:00" if time_from else "Time: check the url")
+                    print(f"Venue: {event.get('location_other_en', '')}")
+                    print(f"URL: {event.get('website', '')}")
+                    print("-" * 40)
         else:
             print(f"Request error: {response.status_code}")
 

@@ -1,7 +1,7 @@
 import requests
 import json
 from datetime import datetime, timedelta, time
-import time as t
+import time as timeThreadSleep
 from common_utils import CommonUtils
 
 url = "https://www.eventbrite.hk/api/v3/destination/search/"
@@ -29,7 +29,7 @@ category_dict = {
 def fetch_events(which_month, title_filter_words):
     # for Category
     for category_name, category in category_dict.items():
-        t.sleep(1)
+        timeThreadSleep.sleep(1)
         payload = json.dumps(
             {
                 "event_search": {

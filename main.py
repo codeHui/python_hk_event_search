@@ -10,6 +10,11 @@ title_filter_config = {
     "hkbu": ["PhD programme"],
     "eventbrite": ["Book Club","Weekly Social HackJam","AIA", "Eats Out", "Drink","瑜伽","Meditation","展覽","Testing","NETMHK","Live Music","創意工作坊","SALSA FEVER","護手霜","Fringe Club","Kizomba","Hive x Starring","校舍參觀","香港私人物業","BOLLYWOOD NIGHT","PATIENTS FOR YOUR CLINIC","Board Games","Comedy Night"]
 }
+# title_filter_config = {
+#     "hku": [],
+#     "hkbu": [],
+#     "eventbrite": []
+# }
 
 def run():
     print("=============== CityU ===============")
