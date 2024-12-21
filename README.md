@@ -1,6 +1,6 @@
 # HK Event Search
 
-python_hk_event_search allows you to search for Hong Kong events from various universities and event platforms with a single command. It filters out events that occur during working hours and the topics you are not interested, saving you time and effort.
+python_hk_event_search allows you to search for Hong Kong events from various universities and event platforms with a single command. It filters out events that occur during working hours and the topics you are not interested in, saving you time and effort.
 
 ## Features
 
