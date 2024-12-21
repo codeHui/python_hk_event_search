@@ -4,11 +4,11 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from common_utils import CommonUtils
 
+# Define title filter substrings (add new terms here)
+title_filter_words = ["漢字","Lyrics","Periodontal","clinical", "Cadaveric","Buddhism","20th Hong Kong International Orthopaedic Forum","12th Hong Kong Pathology Forum","Shostakovich Preludes and Fugues","Printmakers","ISMS"]
+
 # URL to scrape
 url = "https://www.hku.hk/event/upcoming.html"
-
-# Define title filter substrings (add new terms here)
-FILTER_TITLE_SUBSTRINGS = ["漢字","Lyrics","Periodontal","clinical", "Cadaveric","Buddhism","20th Hong Kong International Orthopaedic Forum","12th Hong Kong Pathology Forum","Shostakovich Preludes and Fugues","Printmakers","ISMS"]
 
 def fetch_events():
     session = HTMLSession()
@@ -86,7 +86,7 @@ def fetch_events():
             urlHref = ""
         
         # Filter out events with titles containing any of the filter substrings
-        if any(sub.lower() in title.lower() for sub in FILTER_TITLE_SUBSTRINGS):
+        if any(sub.lower() in title.lower() for sub in title_filter_words):
             continue
         
         try:
