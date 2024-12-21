@@ -59,15 +59,11 @@ URL: https://www.eventbrite.com/e/hku-mba-open-house-tickets-1118454901719
 
 ## Contributing
 
-We welcome contributions! Please feel free to fork the repository, submit issues, and send pull requests. Join the discussion in the Discussions tab.
+Please feel free give it a star, fork the repository, and send pull requests. Join the discussion in the Discussions tab.
 
 ## License
 
 This project is licensed under the MIT License.
-
-## Acknowledgements
-
-Thanks to all contributors and the open-source community for their support.
 
 ## Contact
 
