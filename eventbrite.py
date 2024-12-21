@@ -4,7 +4,7 @@ from datetime import datetime, timedelta, time
 import time as t
 from common_utils import CommonUtils
 
-skip_keywords = ["Weekly Social HackJam","AIA", "Eats Out", "Drink","瑜伽","Meditation","展覽","Testing","NETMHK","Live Music","創意工作坊","SALSA FEVER","護手霜","Fringe Club","Kizomba","Hive x Starring"]
+title_filter_words = ["Weekly Social HackJam","AIA", "Eats Out", "Drink","瑜伽","Meditation","展覽","Testing","NETMHK","Live Music","創意工作坊","SALSA FEVER","護手霜","Fringe Club","Kizomba","Hive x Starring"]
 
 url = "https://www.eventbrite.hk/api/v3/destination/search/"
 
@@ -113,7 +113,7 @@ def fetch_events(which_month):
 
             if not is_online_event:
                 # if title contains "AIA" "Eats Out", then skip
-                if any(keyword in title for keyword in skip_keywords):
+                if any(keyword in title for keyword in title_filter_words):
                     continue
                 if not CommonUtils.is_period_after_work(event_start, event_end):
                     continue

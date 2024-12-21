@@ -2,6 +2,7 @@ import cityu
 import polyu
 import eventbrite
 import hku
+import hkbu
 
 def run():
     print("=============== CityU ===============")
@@ -10,6 +11,9 @@ def run():
     polyu.fetch_events()
     print("=============== hku ===============")
     hku.fetch_events()
+    print("=============== hkbu ===============")
+    hkbu.fetch_events()
+    
     print("=============== Eventbrite next_month===============")
     eventbrite.fetch_events("next_month")
     print("=============== Eventbrite this_month===============")
