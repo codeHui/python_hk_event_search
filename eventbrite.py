@@ -4,7 +4,7 @@ from datetime import datetime, timedelta, time
 import time as t
 from common_utils import CommonUtils
 
-title_filter_words = ["Weekly Social HackJam","AIA", "Eats Out", "Drink","瑜伽","Meditation","展覽","Testing","NETMHK","Live Music","創意工作坊","SALSA FEVER","護手霜","Fringe Club","Kizomba","Hive x Starring"]
+skip_keywords = ["Weekly Social HackJam","AIA", "Eats Out", "Drink","瑜伽","Meditation","展覽","Testing","NETMHK","Live Music","創意工作坊","SALSA FEVER","護手霜","Fringe Club","Kizomba","Hive x Starring"]
 
 url = "https://www.eventbrite.hk/api/v3/destination/search/"
 
@@ -43,14 +43,15 @@ categoryArr = [
     # "EventbriteCategory/199",
 ]
             
-def fetch_events():
+def fetch_events(which_month):
     # for Category
     for category in categoryArr:
         payload = json.dumps(
             {
                 "event_search": {
                     # "dates": ["current_future", "this_month"],
-                    "dates": ["current_future", "next_month"],
+                    # "dates": ["current_future", "next_month"],
+                    "dates": ["current_future", which_month],
                     "dedup": True,
                     "places": ["85671791"],
                     "price": "free",
@@ -103,7 +104,7 @@ def fetch_events():
             start_time = event.get("start_time")
             end_time = event.get("end_time")
             title = event.get("name")
-            url = event.get("url")
+            urlEvent = event.get("url")
             localized_address_display = event.get("primary_venue").get("address").get("localized_address_display")
 
             event_start = datetime.strptime(f"{start_date} {start_time}", "%Y-%m-%d %H:%M")
@@ -112,7 +113,7 @@ def fetch_events():
 
             if not is_online_event:
                 # if title contains "AIA" "Eats Out", then skip
-                if any(keyword in title for keyword in title_filter_words):
+                if any(keyword in title for keyword in skip_keywords):
                     continue
                 if not CommonUtils.is_period_after_work(event_start, event_end):
                     continue
@@ -124,7 +125,7 @@ def fetch_events():
                     f"End Date  : {event_end.strftime('%Y-%m-%d %H:%M:%S')}, {event_end.strftime('%A')}"
                 )
                 print(f"URL: {localized_address_display}")
-                print(f"URL: {url}\n")
+                print(f"URL: {urlEvent}\n")
 
         t.sleep(5)
 

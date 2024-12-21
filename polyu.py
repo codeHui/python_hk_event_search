@@ -3,6 +3,8 @@ from datetime import datetime, time, timedelta
 from bs4 import BeautifulSoup
 from common_utils import CommonUtils
 
+# PolyU Events Website: https://www.polyu.edu.hk/en/events/
+
 def fetch_events():
     # URL and parameters
     url = "https://www.polyu.edu.hk/en/api/sitecore/calendar/search"

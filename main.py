@@ -10,8 +10,10 @@ def run():
     polyu.fetch_events()
     print("=============== hku ===============")
     hku.fetch_events()
-    print("=============== Eventbrite ===============")
-    eventbrite.fetch_events()
+    print("=============== Eventbrite next_month===============")
+    eventbrite.fetch_events("next_month")
+    print("=============== Eventbrite this_month===============")
+    eventbrite.fetch_events("this_month")
     
 
 if __name__ == "__main__":
