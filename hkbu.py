@@ -1,6 +1,7 @@
 import requests
 from datetime import datetime, timedelta
 from common_utils import CommonUtils
+import time
 
 title_filter_words = ["PhD programme"]
 
@@ -20,6 +21,9 @@ def fetch_events():
         "referer": "https://event.hkbu.edu.hk/?locale=en&date=2024-12-21&duration=week&view=grid",
     })
 
+    # Keep track of printed titles
+    printed_titles = set()
+
     # Prepare 6 consecutive weeks starting from the current week
     today = datetime.now()
     # Calculate offset so that weeks start on Sunday
@@ -33,6 +37,8 @@ def fetch_events():
         weeks.append((week_start, week_end))
 
     for i, (start_date, end_date) in enumerate(weeks):
+        time.sleep(1)  # Pause for 1 second between iterations
+        
         if i == 0:
             print("    ===== HKBU This Week =====")
         else:
@@ -65,6 +71,11 @@ def fetch_events():
 
                 if any(sub.lower() in title_en.lower() for sub in title_filter_words):
                     continue
+
+                # Skip if already printed
+                if title_en in printed_titles:
+                    continue
+                printed_titles.add(title_en)
 
                 day_of_week_from = start_dt.strftime("%A")
                 day_of_week_to = end_dt.strftime("%A")

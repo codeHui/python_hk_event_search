@@ -4,48 +4,34 @@ from datetime import datetime, timedelta, time
 import time as t
 from common_utils import CommonUtils
 
-title_filter_words = ["Weekly Social HackJam","AIA", "Eats Out", "Drink","瑜伽","Meditation","展覽","Testing","NETMHK","Live Music","創意工作坊","SALSA FEVER","護手霜","Fringe Club","Kizomba","Hive x Starring"]
+title_filter_words = ["Book Club","Weekly Social HackJam","AIA", "Eats Out", "Drink","瑜伽","Meditation","展覽","Testing","NETMHK","Live Music","創意工作坊","SALSA FEVER","護手霜","Fringe Club","Kizomba","Hive x Starring","校舍參觀","香港私人物業","BOLLYWOOD NIGHT","PATIENTS FOR YOUR CLINIC","Board Games","Comedy Night"]
 
 url = "https://www.eventbrite.hk/api/v3/destination/search/"
 
-categoryArr = [
-    # Business
-    "EventbriteCategory/101",
-    # Health
-    # "EventbriteCategory/107",
-    # Charity & Causes
-    # "EventbriteCategory/111",
-    # Community
-    # "EventbriteCategory/113",
-    # Family & Education
-    # "EventbriteCategory/115",
-    # Fashion
-    # "EventbriteCategory/106",
-    # Film & Media
-    # "EventbriteCategory/104",
-    # Hobbies
-    # "EventbriteCategory/119",
-    # Home & Lifestyle
-    # "EventbriteCategory/117",
-    # Performing & Visual Arts
-    # "EventbriteCategory/105",
-    # Government
-    # "EventbriteCategory/112",
-    # Spirituality
-    # "EventbriteCategory/114",
-    # School Activities
-    # "EventbriteCategory/120",
-    # Science & Tech
-    # "EventbriteCategory/102",
-    # Holidays
-    # "EventbriteCategory/116",
-    # Other
-    # "EventbriteCategory/199",
-]
-            
+category_dict = {
+    "Science & Tech": "EventbriteCategory/102",
+    "Business": "EventbriteCategory/101",
+    "Health": "EventbriteCategory/107",
+    "Community": "EventbriteCategory/113",
+    "Government": "EventbriteCategory/112",
+    "Spirituality": "EventbriteCategory/114",
+    
+    "Charity & Causes": "EventbriteCategory/111",
+    "Family & Education": "EventbriteCategory/115",
+    "Fashion": "EventbriteCategory/106",
+    "Film & Media": "EventbriteCategory/104",
+    "Hobbies": "EventbriteCategory/119",
+    "Home & Lifestyle": "EventbriteCategory/117",
+    "Performing & Visual Arts": "EventbriteCategory/105",
+    "School Activities": "EventbriteCategory/120",
+    "Holidays": "EventbriteCategory/116",
+    "Other": "EventbriteCategory/199",
+}
+
 def fetch_events(which_month):
     # for Category
-    for category in categoryArr:
+    for category_name, category in category_dict.items():
+        t.sleep(1)
         payload = json.dumps(
             {
                 "event_search": {
@@ -89,10 +75,9 @@ def fetch_events(which_month):
                 continue
             data = response.json()
             results = data["events"]["results"]
-            print(f"{len(results)} {category}\n\n")
+            print(f"{len(results)} {category_name}\n\n")
         except Exception as e:
             print(f"An error occurred: {e}")
-            t.sleep(20)
             continue
 
         # Iterate over results
@@ -113,7 +98,7 @@ def fetch_events(which_month):
 
             if not is_online_event:
                 # if title contains "AIA" "Eats Out", then skip
-                if any(keyword in title for keyword in title_filter_words):
+                if any(keyword.lower() in title.lower() for keyword in title_filter_words):
                     continue
                 if not CommonUtils.is_period_after_work(event_start, event_end):
                     continue
@@ -130,4 +115,5 @@ def fetch_events(which_month):
         t.sleep(5)
 
 if __name__ == "__main__":
-    fetch_events()
+    # fetch_events("next_month")
+    fetch_events("this_month")
