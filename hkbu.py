@@ -3,11 +3,9 @@ from datetime import datetime, timedelta
 from common_utils import CommonUtils
 import time
 
-title_filter_words = ["PhD programme"]
-
 # the original event website is https://event.hkbu.edu.hk/?locale=en&date=2024-12-21&duration=week&view=grid
 
-def fetch_events():
+def fetch_events(title_filter_words):
     base_url = "https://event.hkbu.edu.hk/api/events.php"
     session = requests.Session()
     session.headers.update({
@@ -97,4 +95,5 @@ def fetch_events():
 
 # ...existing code...
 if __name__ == "__main__":
-    fetch_events()
+    from main import title_filter_config
+    fetch_events(title_filter_config["hkbu"])

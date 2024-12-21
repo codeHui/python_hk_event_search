@@ -4,8 +4,6 @@ from datetime import datetime, timedelta, time
 import time as t
 from common_utils import CommonUtils
 
-title_filter_words = ["Book Club","Weekly Social HackJam","AIA", "Eats Out", "Drink","瑜伽","Meditation","展覽","Testing","NETMHK","Live Music","創意工作坊","SALSA FEVER","護手霜","Fringe Club","Kizomba","Hive x Starring","校舍參觀","香港私人物業","BOLLYWOOD NIGHT","PATIENTS FOR YOUR CLINIC","Board Games","Comedy Night"]
-
 url = "https://www.eventbrite.hk/api/v3/destination/search/"
 
 category_dict = {
@@ -28,7 +26,7 @@ category_dict = {
     "Other": "EventbriteCategory/199",
 }
 
-def fetch_events(which_month):
+def fetch_events(which_month, title_filter_words):
     # for Category
     for category_name, category in category_dict.items():
         t.sleep(1)
@@ -115,5 +113,5 @@ def fetch_events(which_month):
         t.sleep(5)
 
 if __name__ == "__main__":
-    # fetch_events("next_month")
-    fetch_events("this_month")
+    from main import title_filter_config
+    fetch_events("this_month", title_filter_config["eventbrite"])

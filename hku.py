@@ -4,13 +4,10 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from common_utils import CommonUtils
 
-# Define title filter substrings (add new terms here)
-title_filter_words = ["漢字","Lyrics","Periodontal","clinical", "Cadaveric","Buddhism","20th Hong Kong International Orthopaedic Forum","12th Hong Kong Pathology Forum","Shostakovich Preludes and Fugues","Printmakers","ISMS"]
-
 # URL to scrape
 url = "https://www.hku.hk/event/upcoming.html"
 
-def fetch_events():
+def fetch_events(title_filter_words):
     session = HTMLSession()
     response = session.get(url)
     
@@ -118,4 +115,5 @@ def fetch_events():
 
 # ...existing code...
 if __name__ == "__main__": 
-    fetch_events()
+    from main import title_filter_config
+    fetch_events(title_filter_config["hku"])
