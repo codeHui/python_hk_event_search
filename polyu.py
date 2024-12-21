@@ -33,7 +33,7 @@ def fetch_events():
 
         # Check if event is on weekend or after 18:30 on a weekday
         # if True:
-        if CommonUtils.is_event_on_weekend_or_after_hours(event_start, event_end):
+        if CommonUtils.is_period_after_work(event_start, event_end):
             # Parse content to get title and href
             content = event.get("content", "")
             soup = BeautifulSoup(content, "html.parser")

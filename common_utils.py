@@ -2,7 +2,7 @@ from datetime import datetime, time, timedelta
 
 class CommonUtils:
     @staticmethod
-    def is_event_on_weekend_or_after_hours(event_start, event_end):
+    def is_period_after_work(event_start, event_end):
         # Return true if there is Saturday or Sunday between event_start and event_end
         current_date = event_start
         while current_date <= event_end:

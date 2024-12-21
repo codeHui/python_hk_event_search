@@ -113,7 +113,7 @@ def fetch_events():
                 # if title contains "AIA" "Eats Out", then skip
                 if any(keyword in title for keyword in skip_keywords):
                     continue
-                if not CommonUtils.is_event_on_weekend_or_after_hours(event_start, event_end):
+                if not CommonUtils.is_period_after_work(event_start, event_end):
                     continue
                 print(f"Title: {title}")
                 print(
