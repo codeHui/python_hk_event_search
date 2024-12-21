@@ -110,8 +110,6 @@ def fetch_events(which_month, title_filter_words):
                 print(f"URL: {localized_address_display}")
                 print(f"URL: {urlEvent}\n")
 
-        t.sleep(5)
-
 if __name__ == "__main__":
     from main import title_filter_config
     fetch_events("this_month", title_filter_config["eventbrite"])
