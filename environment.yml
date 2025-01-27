@@ -1,0 +1,10 @@
+name: python_hk_event_search
+channels:
+  - conda-forge
+dependencies:
+  - python=3.11
+  - pip
+  - pip:
+    - requests-html==0.10.0
+    - beautifulsoup4==4.12.2
+    - lxml[html_clean]==4.9.2

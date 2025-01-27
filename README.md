@@ -9,23 +9,15 @@ python_hk_event_search allows you to search for Hong Kong events from various un
 - Filter out topics by keywords in their titles by modifying `title_filter_config` in the `main.py`.
 - Easy to use and extend.
 
-## Installation
-
-To get started, clone the repository and install the required dependencies:
-
-```bash
-git clone https://github.com/codeHui/python_hk_event_search.git
-cd python_hk_event_search
-pip install requests-html beautifulsoup4 lxml
-```
 
 ## Usage
 
-Run the script to fetch and display events:
+Run the script (see Installation below for detail):
 
 ```bash
 python main.py
 ```
+
 
 The print result will be like
 ```
@@ -57,13 +49,58 @@ URL: 8 Connaught Place, Hong Kong SAR China, HKI
 URL: https://www.eventbrite.com/e/hku-mba-open-house-tickets-1118454901719
 ```
 
+## Installation
+
+### To get started, clone the repository and install the required dependencies:
+
+```bash
+git clone https://github.com/codeHui/python_hk_event_search.git
+cd python_hk_event_search
+```
+
+### Conda Environment
+To initialize the conda environment from the environment.yml file:
+```bash
+conda env create -f environment.yml
+conda activate python_hk_event_search
+python main.py
+```
+### If you are Running in VS Code  
+Make sure you have selected the correct Python interpreter (e.g., python_hk_event_search),   
+Show and Run Commands (Ctrl + SHift +P ) -> Python: Select Interpreter
+
+### Other conda command you may need
+> Note: If you see an error asking to run 'conda init' before 'conda activate', run:
+```bash
+conda init
+```
+then restart your shell.
+
+> Windows PowerShell users may need to run:
+```bash
+conda init powershell
+```
+then close and reopen PowerShell, and run:
+```bash
+conda activate python_hk_event_search
+```
+
+> Updating the environment 
+```bash
+conda deactivate python_hk_event_search
+conda env remove -n python_hk_event_search
+conda env create -f environment.yml
+conda activate python_hk_event_search
+```
+
+
 ## Contributing
 
 Please feel free give it a star, fork the repository, and send pull requests. Join the discussion in the Discussions tab.
 
 ## License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License and free to use.
 
 ## Contact
 
