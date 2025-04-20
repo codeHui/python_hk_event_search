@@ -9,7 +9,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
-def fetch_events():
+def fetch_events(title_filter_words=[]):
+    # categoryId=546 is for "Tech" events
     url = "https://www.meetup.com/find/?source=EVENTS&eventType=inPerson&sortField=DATETIME&location=hk--Kowloon&categoryId=546"
     
     try:
@@ -31,7 +32,7 @@ def fetch_events():
         print("Waiting for dynamic content to load...")
         wait = WebDriverWait(driver, 5)  # 等待最多15秒
         wait.until(EC.presence_of_element_located((By.CLASS_NAME, "max-w-narrow")))
-        
+
         # 再等待一點時間確保所有事件都已加載
         time.sleep(5)
         
@@ -66,6 +67,14 @@ def fetch_events():
             time_element = a_tag.find('time')
             event_time = time_element.text.strip() if time_element else "Time not found"
             
+            # Get the title
+            title_element = a_tag.find('h2')
+            title = title_element.text.strip() if title_element else "Title not found"
+            
+            # Filter out events with titles containing any of the filter substrings
+            if any(keyword.lower() in title.lower() for keyword in title_filter_words):
+                continue
+            
             # Parse time string to datetime object
             try:
                 # Example format: "Wed, Apr 23 · 2:00 PM HKT"
@@ -94,10 +103,6 @@ def fetch_events():
             except Exception as e:
                 print(f"Time parsing error for '{event_time}': {e}")
             
-            # Get the title
-            title_element = a_tag.find('h2')
-            title = title_element.text.strip() if title_element else "Title not found"
-            
             # Get the event URL
             event_url = a_tag.get('href', '')
             
@@ -111,4 +116,5 @@ def fetch_events():
         print(f"An error occurred: {e}")
 
 if __name__ == "__main__":
-    fetch_events()
+    from main import title_filter_config
+    fetch_events(title_filter_config["meetup"])
