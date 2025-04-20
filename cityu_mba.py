@@ -32,11 +32,13 @@ def fetch_events():
             print("cityu mba skip: 無法找到日期時間標籤")
             continue
         # 標題
-        title_tag = box.find("div", class_="event-title")
+        title_tag = box.find("div", class_="title")
         title = title_tag.get_text(strip=True) if title_tag else ""
         # type/venue
-        type_tag = box.find("div", class_="event-type")
+        type_tag = box.find("div", class_="venue d-flex")
         type_str = type_tag.get_text(strip=True) if type_tag else ""
+        if type_str == "Online via Zoom":
+            continue
         # 連結
         link_tag = box.find("a", href=True)
         url_event = link_tag['href'] if link_tag else url

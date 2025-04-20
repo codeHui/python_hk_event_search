@@ -23,6 +23,9 @@ def run():
     print("=============== GDG HK ===============")
     gdg_hk.fetch_events()
     
+    print("=============== CityU MBA ===============")
+    cityu.fetch_events()
+    
     print("=============== CityU ===============")
     cityu.fetch_events()
     
