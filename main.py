@@ -3,6 +3,7 @@ import polyu
 import eventbrite
 import hku
 import hkbu
+import gdg_hk
 
 # Configuration for title filter words
 title_filter_config = {
@@ -19,6 +20,9 @@ title_filter_config = {
 # }
 
 def run():
+    print("=============== GDG HK ===============")
+    gdg_hk.fetch_events()
+    
     print("=============== CityU ===============")
     cityu.fetch_events()
     
