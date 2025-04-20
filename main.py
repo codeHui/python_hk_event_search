@@ -6,6 +6,7 @@ import hkbu
 import gdg_hk
 import cityu_mba
 import luma
+import meetup  # Add this import for the new module
 
 # Configuration for title filter words
 title_filter_config = {
@@ -22,6 +23,9 @@ title_filter_config = {
 # }
 
 def run():
+    print("=============== Meetup ===============")
+    meetup.fetch_events()
+    
     print("=============== Luma ===============")
     luma.fetch_events()
 
