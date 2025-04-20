@@ -8,7 +8,9 @@ import hkbu
 title_filter_config = {
     "hku": ["漢字","Lyrics","Periodontal","clinical", "Cadaveric","Buddhism","20th Hong Kong International Orthopaedic Forum","12th Hong Kong Pathology Forum","Shostakovich Preludes and Fugues","Printmakers","ISMS"],
     "hkbu": ["PhD programme"],
-    "eventbrite": ["Book Club","Weekly Social HackJam","AIA", "Eats Out", "Drink","瑜伽","Meditation","展覽","Testing","NETMHK","Live Music","創意工作坊","SALSA FEVER","護手霜","Fringe Club","Kizomba","Hive x Starring","校舍參觀","香港私人物業","BOLLYWOOD NIGHT","PATIENTS FOR YOUR CLINIC","Board Games","Comedy Night"]
+    "eventbrite": ["Public Social HackJam",
+                   "Networking Night","Art Pop-Up","Free (face-to-face) English Classes","Dancing Group",
+                   "Ascension","Legal Workshops","Open Day at Oxbridge School","YWCA CLLE","The Psychology of Money","Summer Sizzler","Dubai Real Estate","Book Club","Weekly Social HackJam","AIA", "Eats Out", "Drink","瑜伽","Meditation","展覽","Testing","NETMHK","Live Music","創意工作坊","SALSA FEVER","護手霜","Fringe Club","Kizomba","Hive x Starring","校舍參觀","香港私人物業","BOLLYWOOD NIGHT","PATIENTS FOR YOUR CLINIC","Board Games","Comedy Night"]
 }
 # title_filter_config = {
 #     "hku": [],
