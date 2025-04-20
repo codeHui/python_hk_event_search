@@ -19,7 +19,7 @@ def fetch_events():
             ticket_info = event.get("ticket_info", {})
             
             # Filter for events that are free, not sold out, and not near capacity
-            if ticket_info.get("is_free", False) and not ticket_info.get("is_sold_out", True) and not ticket_info.get("is_near_capacity", True):
+            if ticket_info.get("is_free", False) and not ticket_info.get("is_sold_out", True):
                 # Extract event details
                 event_data = event.get("event", {})
                 title = event_data.get("name", "")
