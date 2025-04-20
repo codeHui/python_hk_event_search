@@ -21,4 +21,4 @@ class CommonUtils:
 
         # Return true if event_start is after 18:20 on a weekday
         return event_start.time() >= time(18, 20)
-    
+

@@ -4,6 +4,8 @@ import eventbrite
 import hku
 import hkbu
 import gdg_hk
+import cityu_mba
+import luma
 
 # Configuration for title filter words
 title_filter_config = {
@@ -20,11 +22,14 @@ title_filter_config = {
 # }
 
 def run():
+    print("=============== Luma ===============")
+    luma.fetch_events()
+
     print("=============== GDG HK ===============")
     gdg_hk.fetch_events()
     
     print("=============== CityU MBA ===============")
-    cityu.fetch_events()
+    cityu_mba.fetch_events()
     
     print("=============== CityU ===============")
     cityu.fetch_events()
