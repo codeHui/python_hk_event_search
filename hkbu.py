@@ -69,6 +69,8 @@ def fetch_events(title_filter_words):
 
                 if any(sub.lower() in title_en.lower() for sub in title_filter_words):
                     continue
+                if any(sub.lower() in title_tc.lower() for sub in title_filter_words):
+                    continue
 
                 if CommonUtils.is_period_after_work(start_dt, end_dt):
                     # Skip if already printed
