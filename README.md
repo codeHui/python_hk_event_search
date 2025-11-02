@@ -4,7 +4,7 @@ python_hk_event_search allows you to search for Hong Kong events from various un
 
 ## Features
 
-- Fetch events from Eventbrite, CityU, PolyU, HKU, and HKBU.
+- Fetch events from Eventbrite, Luma, Meetup, GDG HK, HKU, CityU, PolyU, and HKBU.
 - Filters out events during working hours.
 - Filter out topics by keywords in their titles by modifying `title_filter_config` in the `main.py`.
 - Easy to use and extend.
