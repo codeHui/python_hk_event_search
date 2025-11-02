@@ -11,8 +11,8 @@ import meetup  # Add this import for the new module
 # Configuration for title filter words
 title_filter_config = {
     "hku": ["導賞","音樂節","中學","Endoscopy","Tubular Structures","Thyroid","Retreat","HKSGO","Orthodontic","漢字","Lyrics","Periodontal"
-            ,"O&G Centenary","Perio Implant","Esophageal Cancer","HKUMAA 25th","CAAD Futures","Certificate in Infection","clinical", "Cadaveric","Buddhism","20th Hong Kong International Orthopaedic Forum","12th Hong Kong Pathology Forum","Shostakovich Preludes and Fugues","Printmakers","ISMS"],
-    "hkbu": ["PhD programme","比賽","特展"],
+            ,"Infectious","Orthopaedic","Musculoskeletal","Surgery","Infection","dental","O&G Centenary","Perio Implant","Esophageal Cancer","HKUMAA 25th","CAAD Futures","Certificate in Infection","clinical", "Cadaveric","Buddhism","20th Hong Kong International Orthopaedic Forum","12th Hong Kong Pathology Forum","Shostakovich Preludes and Fugues","Printmakers","ISMS"],
+    "hkbu": ["PhD programme","比賽","特展","崇拜","Choir"],
     "meetup": ["HKMechworks", "Coffee & Connections", "Meditation", "Yoga", "瑜伽", "Dance", "Board Games", "Comedy Night", "Book Club", "Hiking"],
     "eventbrite": ["新體驗","Public Social HackJam","How to prepare IPO successfully","Startup Legal Tech","健脊及伸展","頸椎問題的影響","佛山","One Sai Day",
                    "Nook Bar","Networking Night","Art Pop-Up","Free (face-to-face) English Classes","Dancing Group","Kids English","舞蹈工作坊","運動科學資訊日",
@@ -26,25 +26,25 @@ def run():
     print("=============== GDG HK ===============")
     gdg_hk.fetch_events()
     
-    print("=============== CityU MBA ===============")
-    cityu_mba.fetch_events()
-    
-    print("=============== CityU ===============")
-    cityu.fetch_events()
-    
-    print("=============== PolyU ===============")
-    polyu.fetch_events()
-    
     print("=============== hku ===============")
     hku.fetch_events(title_filter_words=title_filter_config["hku"])
-    
-    print("=============== hkbu ===============")
-    hkbu.fetch_events(title_filter_words=title_filter_config["hkbu"])
     
     print("=============== Eventbrite next_month===============")
     eventbrite.fetch_events("next_month", title_filter_words=title_filter_config["eventbrite"])
     print("=============== Eventbrite this_month===============")
     eventbrite.fetch_events("this_month", title_filter_words=title_filter_config["eventbrite"])
+    
+    print("=============== CityU ===============")
+    cityu.fetch_events()
+    
+    print("=============== CityU MBA ===============")
+    cityu_mba.fetch_events()
+    
+    print("=============== PolyU ===============")
+    polyu.fetch_events()
+    
+    print("=============== hkbu ===============")
+    hkbu.fetch_events(title_filter_words=title_filter_config["hkbu"])
 
     print("=============== Meetup ===============")
     meetup.fetch_events(title_filter_words=title_filter_config["meetup"])

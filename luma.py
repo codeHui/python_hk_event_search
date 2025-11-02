@@ -4,6 +4,7 @@ from common_utils import CommonUtils
 import time
 
 def fetch_events():
+    # https://luma.com/hongkong
     url = "https://api.lu.ma/discover/get-paginated-events?discover_place_api_id=discplace-z9B5Guglh2WINA1&pagination_limit=50"
     
     try:
