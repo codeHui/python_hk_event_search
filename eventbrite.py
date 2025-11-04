@@ -6,6 +6,7 @@ from common_utils import CommonUtils
 
 url = "https://www.eventbrite.hk/api/v3/destination/search/"
 
+#  Delete the categories you are not interested in
 category_dict = {
     "Science & Tech": "EventbriteCategory/102",
     "Business": "EventbriteCategory/101",

@@ -8,7 +8,7 @@ import cityu_mba
 import luma
 import meetup  # Add this import for the new module
 
-# Configuration for title filter words
+# Filter out topics by keywords in their titles 
 title_filter_config = {
     "hku": ["導賞","音樂節","中學","Endoscopy","Tubular Structures","Thyroid","Retreat","HKSGO","Orthodontic","漢字","Lyrics","Periodontal"
             ,"Infectious","Orthopaedic","Musculoskeletal","Surgery","Infection","dental","O&G Centenary","Perio Implant","Esophageal Cancer","HKUMAA 25th","CAAD Futures","Certificate in Infection","clinical", "Cadaveric","Buddhism","20th Hong Kong International Orthopaedic Forum","12th Hong Kong Pathology Forum","Shostakovich Preludes and Fugues","Printmakers","ISMS"],

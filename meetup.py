@@ -15,9 +15,9 @@ def fetch_events(title_filter_words=[]):
     
     driver = None
     try:
-        # 設置 Chrome 選項
+        # Set Chrome options
         chrome_options = Options()
-        chrome_options.add_argument("--headless")  # 無頭模式，不顯示瀏覽器
+        chrome_options.add_argument("--headless")  # Headless mode, browser not shown
         chrome_options.add_argument("--disable-gpu")
         chrome_options.add_argument("--no-sandbox")
         chrome_options.add_argument("--disable-dev-shm-usage")
@@ -26,15 +26,15 @@ def fetch_events(title_filter_words=[]):
         chrome_options.add_experimental_option("excludeSwitches", ["enable-automation"])
         chrome_options.add_experimental_option('useAutomationExtension', False)
         
-        # 初始化 Chrome WebDriver
+        # Initialize Chrome WebDriver
         driver = webdriver.Chrome(options=chrome_options)
         driver.execute_cdp_cmd('Network.setUserAgentOverride', {"userAgent": 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'})
         
-        # 訪問網址
+        # Visit the URL
         print("Loading the page with Selenium...")
         driver.get(url)
         
-        # 等待頁面加載 - 增加等待時間以確保動態內容加載完成
+        # Wait for the page to load - increase wait time to ensure dynamic content is loaded
         print("Waiting for dynamic content to load...")
         # Wait for body to be present first
         wait = WebDriverWait(driver, 20)
@@ -57,7 +57,7 @@ def fetch_events(title_filter_words=[]):
         # Wait additional time for all content to render
         time.sleep(8)
         
-        # 獲取完整的 HTML
+        # Get the full HTML
         page_source = driver.page_source
         
     except Exception as e:
@@ -76,7 +76,7 @@ def fetch_events(title_filter_words=[]):
         print("No page source to parse. Exiting.")
         return
 
-    # 用 BeautifulSoup 解析 HTML
+    # Parse HTML with BeautifulSoup
     soup = BeautifulSoup(page_source, 'html.parser')
     
     # Try to find JSON-LD structured data first (most reliable)
@@ -98,7 +98,7 @@ def fetch_events(title_filter_words=[]):
         print(f"Found {len(events)} events from JSON-LD data")
         for event in events:
             try:
-                # if contains "event series", then skip
+                # Skip if contains "event series"
                 if "event series" in event.get('name', '').lower():
                     continue
                 
@@ -187,7 +187,7 @@ def fetch_events(title_filter_words=[]):
     
     for event_div in event_divs:
         try:
-            # if contains "event series", then skip
+            # Skip if contains "event series"
             if "event series" in event_div.text.lower():
                 continue
             
