@@ -58,8 +58,15 @@ git clone https://github.com/codeHui/python_hk_event_search.git
 cd python_hk_event_search
 ```
 
-### Conda Environment
-To initialize the conda environment from the environment.yml file:
+### Init Environment using UV
+To initialize the environment using [UV](https://docs.astral.sh/uv/) from the pyproject.toml file:
+```bash
+uv sync
+uv run python main.py
+```
+
+### Init Environment using Conda (Recommend UV, not Conda)
+To initialize the environment using Conda from the environment.yml file:
 ```bash
 conda env create -f environment.yml
 conda activate python_hk_event_search
