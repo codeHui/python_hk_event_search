@@ -84,12 +84,7 @@ Show and Run Commands (Ctrl + SHift +P ) -> Python: Select Interpreter
 
 
 ## Contributing
-
-Please feel free give it a star, fork the repository, and send pull requests. Join the discussion in the Discussions tab.
-
-
-## Contact
-
+Feel free to star, fork the repository, and send pull requests.  
 For any questions or suggestions, please open an issue or start a **[GitHub Discussions](https://github.com/codeHui/python_hk_event_search/discussions)**.
 
 
