@@ -1,6 +1,12 @@
 # HK Event Search
 
-python_hk_event_search allows you to search for Hong Kong events from various event platforms with a single command. It filters out events that occur during working hours and the topics you are not interested in, saving you time and effort.
+**python_hk_event_search** allows you to search for Hong Kong events from various event platforms with a single command. It filters out events that occur during working hours and the topics you are not interested in, saving you time and effort.
+
+## Presentation
+This project is part of the Presentation at [**Open Source Hong Kong**](https://opensource.hk/oshk-meetup-90-queues-for-kafka/).   
+Check out the presentation slide to see the motivation for this project:
+[Presentation at Open Source Hong Kong 20251113.pdf](Presentation%20at%20Open%20Source%20Hong%20Kong%2020251113.pdf)
+
 
 ## Features
 
@@ -72,45 +78,18 @@ conda env create -f environment.yml
 conda activate python_hk_event_search
 python main.py
 ```
-### If you are Running in VS Code  
+### If you are running in VS Code  
 Make sure you have selected the correct Python interpreter (e.g., python_hk_event_search),   
 Show and Run Commands (Ctrl + SHift +P ) -> Python: Select Interpreter
-
-### Other conda command you may need
-> Note: If you see an error asking to run 'conda init' before 'conda activate', run:
-```bash
-conda init
-```
-then restart your shell.
-
-> Windows PowerShell users may need to run:
-```bash
-conda init powershell
-```
-then close and reopen PowerShell, and run:
-```bash
-conda activate python_hk_event_search
-```
-
-> Updating the environment 
-```bash
-conda deactivate python_hk_event_search
-conda env remove -n python_hk_event_search
-conda env create -f environment.yml
-conda activate python_hk_event_search
-```
 
 
 ## Contributing
 
 Please feel free give it a star, fork the repository, and send pull requests. Join the discussion in the Discussions tab.
 
-## License
-
-This project is licensed under the MIT License and free to use.
 
 ## Contact
 
-For any questions or suggestions, please open an issue or start a discussion.
+For any questions or suggestions, please open an issue or start a **[GitHub Discussions](https://github.com/codeHui/python_hk_event_search/discussions)**.
 
-If you like this project, please give it a star!
+
