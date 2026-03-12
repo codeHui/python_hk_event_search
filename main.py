@@ -26,7 +26,7 @@ def run():
     print("=============== GDG HK ===============")
     gdg_hk.fetch_events()
     
-    print("=============== hku ===============")
+    print("=============== HKU ===============")
     hku.fetch_events(title_filter_words=title_filter_config["hku"])
     
     print("=============== Eventbrite next_month===============")
@@ -43,7 +43,7 @@ def run():
     print("=============== PolyU ===============")
     polyu.fetch_events()
     
-    print("=============== hkbu ===============")
+    print("=============== HKBU ===============")
     hkbu.fetch_events(title_filter_words=title_filter_config["hkbu"])
 
     print("=============== Meetup ===============")

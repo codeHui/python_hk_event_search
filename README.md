@@ -27,32 +27,32 @@ uv run python main.py
 
 The print result will be like: 
 ```
-=============== CityU ===============
-Title: CityUHK MBA Masterclass & Info Session in Shanghai (11 January 2025)
-Date: 11 Jan 2025 (Sat)
-Time: 2:30 PM - 5:30 PM
-Venue: The Westin Bund Center Shanghai
-URL: https://cap.cityu.edu.hk/postpublic.aspx?id=M10k0520e245412O738312
+=============== Eventbrite ===============
+Title: WTMHK x 香港 AI 培訓學院 IWD 2026 工作坊：打破數碼營銷單線枷鎖：AI多軌製作宣傳影片
+Start Date: 2026-03-13 19:30:00, Friday
+End Date  : 2026-03-13 21:30:00, Friday
+URL: 21 Sheung Yuet Road, Kowloon Bay, KOW
+URL: https://www.eventbrite.hk/e/wtmhk-x-ai-iwd-2026-ai-tickets-1982757804969
+
+=============== GDG HK ===============
+Title: GDGHK - Build with AI Hong Kong 2026 Speaker Session #3
+Type: Speaker Session / Tech Talk
+Start: 2026-03-18 19:30:00, Wednesday
+URL: https://gdg.community.dev/events/details/google-gdg-hong-kong-presents-gdghk-build-with-ai-hong-kong-2026-speaker-session-3/
+Description: 我哋誠意邀請你參加我哋GDGHK - Build with AI Hong Kong 2026 Speaker Session #3！我們會邀請行業專家黎分享最新Google AI 發展，加上實作示範，希望令大家了解更多生成式AI發展！我地...
 
 =============== PolyU ===============
-Title: 30th Annual Graduate Education and Graduate Student Research Conference in Hospitality & Tourism
-Start Date: 2025-01-02 08:00:00, Thursday
-End Date  : 2025-01-04 18:00:00, Saturday
-URL: https://www.polyu.edu.hk/en/events/2025/1/20250102-30th-Annual-Graduate-Education-and-Graduate-Student-Research-Conference
+Title: International Summit on the Use of AI in Learning and Teaching Languages and Other Subjects & Post-Summit Workshop Series
+Start Date: 2025-07-04 08:00:00, Friday
+End Date  : 2025-07-07 18:30:00, Monday
+URL: https://www.polyu.edu.hk/en/events/2025/7/0704to0707_international-summit-on-the-use-of-ai-in-learning-and-teaching-languages-and-other
 
-=============== hku ===============
-Title: [GUIDED TOUR 導賞] Perckhammer’s Peking: A Photographic Documentation of China’s Capital City in the 1920s 京城舊影：1920年代奧地利攝影家佩克哈默的攝影紀錄
-Date: 26 Jan - 26 Jan 2025 (Sunday)
-Time: 15:30-15:50
-Venue: Drake Gallery, 1/F Fung Ping Shan Building, University Museum and Art Gallery, The University of Hong Kong, 90 Bonham Road, Pokfulam, Hong Kong  
-URL: http://hkuems1.hku.hk/hkuems/ec_hdetail.aspx?guest=Y&UEID=97992
-
-=============== Eventbrite ===============
-Title: HKU MBA Open House
-Start Date: 2025-01-18 02:30:00, Saturday
-End Date  : 2025-01-18 17:30:00, Saturday
-URL: 8 Connaught Place, Hong Kong SAR China, HKI
-URL: https://www.eventbrite.com/e/hku-mba-open-house-tickets-1118454901719
+=============== HKU ===============
+Title: Law in the Digital Age: The EU’s Approach to Regulating AI and Online Platforms
+Date: 31 Mar - 31 Mar 2026 (Tuesday)
+Time: 18:30-19:30
+Venue: Academic Conference Room, 11/F Cheng Yu Tung Tower, The University of Hong Kong
+URL: http://hkuems1.hku.hk/hkuems/ec_hdetail.aspx?guest=Y&UEID=105222
 ```
 
 ## Community
