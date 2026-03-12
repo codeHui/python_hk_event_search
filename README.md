@@ -84,7 +84,12 @@ Show and Run Commands (Ctrl + SHift +P ) -> Python: Select Interpreter
 
 
 ## Contributing
-Feel free to star, fork the repository, and send pull requests.  
+Feel free to share, star, fork the project, and submit pull requests (e.g., to add more event platforms or update APIs).   
 For any questions or suggestions, please open an issue or start a **[GitHub Discussions](https://github.com/codeHui/python_hk_event_search/discussions)**.
 
-
+## Community
+- I concluded by highlighting a key limitation of AI at the presentation: _AI cannot generate truly new ideas or innovations. AI only produces data based on patterns it has learned, which is why communities like ours are essential for sparking creativity and fresh perspectives._  
+  To further support the local IT community, I created a WhatsApp Community dedicated to sharing after-work tech events in Hong Kong. If you enjoy tech meetups and knowledge sharing, feel free to join:  
+  ![community.jpg](readme_image/community.jpg)
+- Our community member has developed a website that aggregates tech events in Hong Kong, and you can check it out here: [devs.hk](https://devs.hk/).  
+  ![devs.hk.jpg](readme_image/devs.hk.jpg)
