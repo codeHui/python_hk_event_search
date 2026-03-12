@@ -57,28 +57,28 @@ URL: https://www.eventbrite.com/e/hku-mba-open-house-tickets-1118454901719
 
 ## Installation
 
-### To get started, clone the repository and install the required dependencies:
+- To get started, clone the repository and install the required dependencies:
 
 ```bash
 git clone https://github.com/codeHui/python_hk_event_search.git
 cd python_hk_event_search
 ```
 
-### Init Environment using UV
-To initialize the environment using [UV](https://docs.astral.sh/uv/) from the pyproject.toml file:
+- Init Environment using UV  
+To initialize the environment using [UV](https://docs.astral.sh/uv/) from the `pyproject.toml` file:
 ```bash
 uv sync
 uv run python main.py
 ```
 
-### Init Environment using Conda (Recommend UV, not Conda)
-To initialize the environment using Conda from the environment.yml file:
+- ~~Init Environment using Conda~~ (Recommend UV, not Conda)  
+To initialize the environment using Conda from the `environment.yml` file:
 ```bash
 conda env create -f environment.yml
 conda activate python_hk_event_search
 python main.py
 ```
-### If you are running in VS Code  
+- If you are running in VS Code  
 Make sure you have selected the correct Python interpreter (e.g., python_hk_event_search),   
 Show and Run Commands (Ctrl + SHift +P ) -> Python: Select Interpreter
 
