@@ -33,7 +33,7 @@ Date: 11 Jan 2025 (Sat)
 Time: 2:30 PM - 5:30 PM
 Venue: The Westin Bund Center Shanghai
 URL: https://cap.cityu.edu.hk/postpublic.aspx?id=M10k0520e245412O738312
-----------------------------------------
+
 =============== PolyU ===============
 Title: 30th Annual Graduate Education and Graduate Student Research Conference in Hospitality & Tourism
 Start Date: 2025-01-02 08:00:00, Thursday
@@ -46,7 +46,7 @@ Date: 26 Jan - 26 Jan 2025 (Sunday)
 Time: 15:30-15:50
 Venue: Drake Gallery, 1/F Fung Ping Shan Building, University Museum and Art Gallery, The University of Hong Kong, 90 Bonham Road, Pokfulam, Hong Kong  
 URL: http://hkuems1.hku.hk/hkuems/ec_hdetail.aspx?guest=Y&UEID=97992
-----------------------------------------
+
 =============== Eventbrite ===============
 Title: HKU MBA Open House
 Start Date: 2025-01-18 02:30:00, Saturday
