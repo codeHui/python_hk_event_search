@@ -16,30 +16,14 @@ Check out the presentation slide to see the motivation for this project:
 - Easy to use and extend.
 
 
-## Installation and Running
+## Running
 
-- To get started, clone the repository and install the required dependencies:
-
-```bash
-git clone https://github.com/codeHui/python_hk_event_search.git
-cd python_hk_event_search
-```
-
-- Init Python Environment using UV from the `pyproject.toml` file:
+UV is recommended to initialize the Python environment (in case you prefer Conda: [run_with_conda.md](readme_files/run_with_conda.md)):
 ```bash
 uv sync
 uv run python main.py
 ```
 
-- ~~Init Python Environment using Conda~~ (Recommend UV, Conda is not free anymore) from the `environment.yml` file:
-```bash
-conda env create -f environment.yml
-conda activate python_hk_event_search
-python main.py
-```
-- If you are running in VS Code:  
-Make sure you have selected the correct Python interpreter (e.g., python_hk_event_search),   
-Show and Run Commands (Ctrl + SHift +P ) -> Python: Select Interpreter
 
 The print result will be like: 
 ```
@@ -74,9 +58,9 @@ URL: https://www.eventbrite.com/e/hku-mba-open-house-tickets-1118454901719
 ## Community
 At the Open Source Hong Kong presentation, I concluded by highlighting a key limitation of AI : _AI cannot generate truly new ideas or innovations. AI only produces data based on patterns it has learned, which is why communities like ours are essential for sparking creativity and fresh perspectives._  
   To further support the local IT community, I created a WhatsApp Community dedicated to sharing after-work tech events in Hong Kong. If you enjoy tech meetups and knowledge sharing, feel free to join:  
-  ![community.jpg](readme_image/community.jpg)  
+  ![community.jpg](readme_files/community.jpg)  
 Our community member has developed a cool website that aggregates tech events in Hong Kong, and you can check it out here: [devs.hk](https://devs.hk/).  
-  ![devs.hk.jpg](readme_image/devs.hk.jpg)
+  ![devs.hk.jpg](readme_files/devs.hk.jpg)
 
 
 ## Contributing
