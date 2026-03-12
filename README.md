@@ -24,8 +24,7 @@ uv sync
 uv run python main.py
 ```
 
-
-The print result will be like: 
+The print result will look like this (you can further filter titles by keywords such as "AI"): 
 ```
 =============== Eventbrite ===============
 Title: WTMHK x 香港 AI 培訓學院 IWD 2026 工作坊：打破數碼營銷單線枷鎖：AI多軌製作宣傳影片
