@@ -60,7 +60,7 @@ At the Open Source Hong Kong presentation, I concluded by highlighting a key lim
 To further support the local IT community, I created a WhatsApp Community dedicated to sharing after-work tech events in Hong Kong. If you enjoy tech meetups and knowledge sharing, feel free to join (we now have over 50 members!):
   ![community.jpg](readme_files/community.jpg)  
 
-Our community member has developed a cool website that aggregates tech events in Hong Kong, and you can check it out here:  
+Our community member [Iulian Arcus](https://www.linkedin.com/in/iulian-arcus/) has developed a cool website that aggregates tech events in Hong Kong. You're welcome to check it out here:  
 [devs.hk](https://devs.hk/)  
   ![devs.hk.jpg](readme_files/devs.hk.jpg)
 
