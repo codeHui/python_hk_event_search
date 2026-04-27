@@ -57,7 +57,7 @@ URL: http://hkuems1.hku.hk/hkuems/ec_hdetail.aspx?guest=Y&UEID=105222
 ## Community
 At the Open Source Hong Kong presentation, I concluded by highlighting a key limitation of AI : _AI cannot generate truly new ideas or innovations. AI only produces data based on patterns it has learned, which is why communities like ours are essential for sparking creativity and fresh perspectives._  
   
-To further support the local IT community, I created a WhatsApp Community dedicated to sharing after-work tech events in Hong Kong. If you enjoy tech meetups and knowledge sharing, feel free to join (we now have over 50 members!):
+To further support the local IT community, I created a WhatsApp Community dedicated to sharing after-work tech events in Hong Kong. If you enjoy tech meetups and knowledge sharing, feel free to join (we now have over 66 members!):
   ![community.jpg](readme_files/community.jpg)  
 
 Our community member [Iulian Arcus](https://www.linkedin.com/in/iulian-arcus/) has developed a cool website that aggregates tech events in Hong Kong. You're welcome to check it out here:  
