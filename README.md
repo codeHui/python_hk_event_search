@@ -1,6 +1,8 @@
-# HK Event Search
-
-**python_hk_event_search** allows you to search for Hong Kong events from various event platforms with a single command. It filters out events that occur during working hours and the topics you are not interested in, saving you time and effort.
+# Hong Kong IT Events
+This README has 3 parts:
+- Part 1: Python Program for searching HK events
+- Part 2: Whatsapp Community for receiving IT events (In-person & at non-work hous)
+- Part 3: HK IT Community List
 
 ## Presentation
 This project is part of the Presentation at [**Open Source Hong Kong**](https://opensource.hk/oshk-meetup-90-queues-for-kafka/).   
@@ -8,15 +10,16 @@ Check out the presentation slide to see the motivation for this project:
 [Presentation at Open Source Hong Kong 20251113.pdf](Presentation%20at%20Open%20Source%20Hong%20Kong%2020251113.pdf)
 
 
-## Features
-
+## Part 1: python_hk_event_search Program
+**python_hk_event_search** allows you to search for Hong Kong events from various event platforms with a single command. It filters out events that occur during working hours and the topics you are not interested in, saving you time and effort.
+#### Features
 - Fetch events from Eventbrite, Luma, Meetup, GDG HK, HKU, CityU, PolyU, and HKBU.
 - Filter for events during non-working hours, in person, free, not sold out, and the categories you are interested in.
 - Filter out topics by keywords in their titles by modifying `title_filter_config` in the `main.py`.
 - Easy to use and extend.
 
 
-## Running
+#### Running
 
 UV is recommended to initialize the Python environment (in case you prefer Conda: [run_with_conda.md](readme_files/run_with_conda.md)):
 ```bash
@@ -54,7 +57,7 @@ Venue: Academic Conference Room, 11/F Cheng Yu Tung Tower, The University of Hon
 URL: http://hkuems1.hku.hk/hkuems/ec_hdetail.aspx?guest=Y&UEID=105222
 ```
 
-## Community
+## Part 2: WhatsApp Community for sharing IT events
 At the Open Source Hong Kong presentation, I concluded by highlighting a key limitation of AI : _AI cannot generate truly new ideas or innovations. AI only produces data based on patterns it has learned, which is why communities like ours are essential for sparking creativity and fresh perspectives._  
   
 To further support the local IT community, I created a WhatsApp Community dedicated to sharing after-work tech events in Hong Kong. If you enjoy tech meetups and knowledge sharing, feel free to join (we now have over 66 members!):
@@ -64,7 +67,7 @@ Our community member [Iulian Arcus](https://www.linkedin.com/in/iulian-arcus/) h
 [devs.hk](https://devs.hk/)  
   ![devs.hk.jpg](readme_files/devs.hk.jpg)
 
-## HK IT Community List
+## Part 3: HK IT Community List
 
 A quick reference to active IT communities in Hong Kong — find the one that fits your interests!
 
