@@ -64,6 +64,23 @@ Our community member [Iulian Arcus](https://www.linkedin.com/in/iulian-arcus/) h
 [devs.hk](https://devs.hk/)  
   ![devs.hk.jpg](readme_files/devs.hk.jpg)
 
+## HK IT Community List
+
+A quick reference to active IT communities in Hong Kong — find the one that fits your interests!
+
+| Community | Website | Meetup | LinkedIn |
+|-----------|---------|--------|----------|
+|  **Open Source Hong Kong (OSHK)** | [opensource.hk](https://opensource.hk/) | [Meetup](https://www.meetup.com/opensourcehk/) |  [LinkedIn](https://www.linkedin.com/company/opensourcehk/) |
+|  **HK Python User Group (HKPUG)** | [pycon.hk](https://pycon.hk/) | [Meetup](https://www.meetup.com/hong-kong-python-user-group/) | — |
+|  **Codeaholics** | — | [Meetup](https://www.meetup.com/codeaholics/) | — |
+|  **AI Tinkerers HK** | [aitinkerers.org](https://hong-kong.aitinkerers.org/) | — | — |
+|  **AI Hong Kong (AIHK)** | [aihongkong.org](https://www.aihongkong.org/) | — | [LinkedIn](https://www.linkedin.com/company/aihongkong/) |
+|  **AWS User Group HK** | — | [Meetup](https://www.meetup.com/aws-user-group-hong-kong-meetup/) | — |
+|  **Google Developer Group HK (GDG HK)** | [gdg.community.dev](https://gdg.community.dev/gdg-hong-kong/) | [Meetup](https://www.meetup.com/gdg-hong-kong/) | [LinkedIn](https://www.linkedin.com/company/gdg-hong-kong/) |
+
+
+
+> Know a community that should be on this list? Feel free to open a PR or issue!
 
 ## Contributing
 Feel free to share, star, fork the project, and submit pull requests (e.g., to add more event platforms or update APIs).   
