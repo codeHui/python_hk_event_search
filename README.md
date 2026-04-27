@@ -1,7 +1,7 @@
 # Hong Kong IT Events
 This README has 3 parts:
 - Part 1: Python Program for searching HK events
-- Part 2: Whatsapp Community for receiving IT events (In-person & at non-work hous)
+- Part 2: Whatsapp Community for receiving IT events (In-person & at non-work hours)
 - Part 3: HK IT Community List
 
 ## Presentation
@@ -15,7 +15,7 @@ Check out the presentation slide to see the motivation for this project:
 #### Features
 - Fetch events from Eventbrite, Luma, Meetup, GDG HK, HKU, CityU, PolyU, and HKBU.
 - Filter for events during non-working hours, in person, free, not sold out, and the categories you are interested in.
-- Filter out topics by keywords in their titles by modifying `title_filter_config` in the `main.py`.
+- Filter out events by keywords in their titles by modifying `title_filter_config` in the `main.py`.
 - Easy to use and extend.
 
 
@@ -58,7 +58,7 @@ URL: http://hkuems1.hku.hk/hkuems/ec_hdetail.aspx?guest=Y&UEID=105222
 ```
 
 ## Part 2: WhatsApp Community for sharing IT events
-At the Open Source Hong Kong presentation, I concluded by highlighting a key limitation of AI : _AI cannot generate truly new ideas or innovations. AI only produces data based on patterns it has learned, which is why communities like ours are essential for sparking creativity and fresh perspectives._  
+At the Open Source Hong Kong presentation, I concluded by highlighting a key limitation of AI: _AI cannot generate truly new ideas or innovations. AI only produces data based on patterns it has learned, which is why communities like ours are essential for sparking creativity and fresh perspectives._  
   
 To further support the local IT community, I created a WhatsApp Community dedicated to sharing after-work tech events in Hong Kong. If you enjoy tech meetups and knowledge sharing, feel free to join (we now have over 66 members!):
   ![community.jpg](readme_files/community.jpg)  
