@@ -68,28 +68,29 @@ Our community member [Iulian Arcus](https://www.linkedin.com/in/iulian-arcus/) h
 
 A quick reference to active IT communities in Hong Kong — find the one that fits your interests!
 
-| Community | Links |
-|-----------|-------|
-| **Open Source Hong Kong (OSHK)** | [Website](https://opensource.hk/) · [Meetup](https://www.meetup.com/opensourcehk/) · [LinkedIn](https://www.linkedin.com/company/opensourcehk/) |
-| **HK Python User Group (HKPUG)** | [Website](https://pycon.hk/) · [Meetup](https://www.meetup.com/hong-kong-python-user-group/) |
-| **Codeaholics** | [Meetup](https://www.meetup.com/codeaholics/) |
-| **AWS User Group HK** | [Meetup](https://www.meetup.com/aws-user-group-hong-kong-meetup/) |
-| **Google Developer Group HK (GDG HK)** | [Website](https://gdg.community.dev/gdg-hong-kong/) · [Meetup](https://www.meetup.com/gdg-hong-kong/) · [LinkedIn](https://www.linkedin.com/company/gdg-hong-kong/) |
-| **AI Tinkerers HK** | [Website](https://hong-kong.aitinkerers.org/) |
-| **AI Hong Kong (AIHK)** | [Website](https://www.aihongkong.org/) · [LinkedIn](https://www.linkedin.com/company/aihongkong/) |
-| **HK Machine Learning** | [Meetup](https://www.meetup.com/hong-kong-machine-learning-meetup/) |
-| **Data Science & GenAI HK** | [Meetup](https://www.meetup.com/data-science-andgenai-hk/) |
-| **PyData Hong Kong** | [Meetup](https://www.meetup.com/pydata-hong-kong/) |
-| **HK Web Dev** | [Meetup](https://www.meetup.com/hk-web-dev/) |
-| **vLLM Hong Kong** | [Meetup](https://www.meetup.com/vllm-hong-kong-meetup-group/) |
-| **HK WordPress** | [Meetup](https://www.meetup.com/hong-kong-wordpress-meetup/) |
-| **HK Kafka** | [Meetup](https://www.meetup.com/hongkong-kafka/) |
-| **Linux User Group HK** | [Meetup](https://www.meetup.com/hong-kong-linux-user-group/) |
-| **ProductTank HK** | [Meetup](https://www.meetup.com/producttank-hong-kong/) |
-| **Dim Sum Labs** | [Meetup](https://www.meetup.com/dimsUmlabs/) |
-| **香港 Maker** | [Facebook](https://www.facebook.com/groups/1467655926864317/) |
-| **HTribe** | [Luma](https://lu.ma/htribe) |
-| **LLVM Social HK** | [Meetup](https://www.meetup.com/llvm-social-hong-kong/) |
+| Community | Category | Links |
+|-----------|----------|-------|
+| **Open Source Hong Kong (OSHK)** | Code | [Website](https://opensource.hk/) · [Meetup](https://www.meetup.com/opensourcehk/) · [LinkedIn](https://www.linkedin.com/company/opensourcehk/) |
+| **HK Python User Group (HKPUG)** | Code | [Website](https://pycon.hk/) · [Meetup](https://www.meetup.com/hong-kong-python-user-group/) |
+| **Codeaholics** | Code | [Meetup](https://www.meetup.com/codeaholics/) |
+| **AWS User Group HK** | Cloud | [Meetup](https://www.meetup.com/aws-user-group-hong-kong-meetup/) |
+| **Google Developer Group HK (GDG HK)** | Cloud | [Website](https://gdg.community.dev/gdg-hong-kong/) · [Meetup](https://www.meetup.com/gdg-hong-kong/) · [LinkedIn](https://www.linkedin.com/company/gdg-hong-kong/) |
+| **AI Tinkerers HK** | AI | [Website](https://hong-kong.aitinkerers.org/) |
+| **AI Hong Kong (AIHK)** | AI | [Website](https://www.aihongkong.org/) · [LinkedIn](https://www.linkedin.com/company/aihongkong/) |
+| **HK Machine Learning** | AI | [Meetup](https://www.meetup.com/hong-kong-machine-learning-meetup/) |
+| **Data Science & GenAI HK** | AI | [Meetup](https://www.meetup.com/data-science-andgenai-hk/) |
+| **vLLM Hong Kong** | AI | [Meetup](https://www.meetup.com/vllm-hong-kong-meetup-group/) |
+| **PyData Hong Kong** | Data | [Meetup](https://www.meetup.com/pydata-hong-kong/) |
+| **HK Web Dev** | Web | [Meetup](https://www.meetup.com/hk-web-dev/) |
+| **HK WordPress** | Web | [Meetup](https://www.meetup.com/hong-kong-wordpress-meetup/) |
+| **Linux User Group HK** | Linux | [Meetup](https://www.meetup.com/hong-kong-linux-user-group/) |
+| **ProductTank HK** | Product | [Meetup](https://www.meetup.com/producttank-hong-kong/) |
+| **Friends of Figma HK** | Design | [Website](https://friends.figma.com/hong-kong/) · [LinkedIn](https://www.linkedin.com/company/fof-hong-kong/) |
+| **HK Kafka** | Kafka  | [Meetup](https://www.meetup.com/hongkong-kafka/) |
+| **LLVM Social HK** | Compiler | [Meetup](https://www.meetup.com/llvm-social-hong-kong/) |
+| **Dim Sum Labs** | Hardware | [Meetup](https://www.meetup.com/dimsUmlabs/) |
+| **香港 Maker** | Hardware | [Facebook](https://www.facebook.com/groups/1467655926864317/) |
+| **HTribe** | Hardware | [Luma](https://lu.ma/htribe) |
 
 
 > Know a community that should be on this list? Feel free to open a PR or issue!
